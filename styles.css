@@ -26,6 +26,15 @@ header h1 {
   margin-bottom: 20px;
 }
 
+
+footer {
+  background-color: #5a25d5; /* Background color */
+  color: #fff; /* Text color */
+  padding: 20px; /* Padding around content */
+  text-align: center; /* Center align text */
+}
+
+
 nav ul {
   list-style: none;
   display: flex;
@@ -105,6 +114,7 @@ section img {
   background-color: #45c3ae;
 }
 
+
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
   nav ul li {
@@ -115,4 +125,12 @@ section img {
       font-size: 12px; /* Adjust font size for smaller screens */
       padding: 8px 12px; /* Adjust padding for smaller screens */
   }
+}
+
+.viewer{
+  width: 700px;
+  height: 400px;
+  padding: 10px;
+  margin: auto;
+
 }
