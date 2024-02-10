@@ -133,4 +133,75 @@ section img {
   padding: 10px;
   margin: auto;
 
+}   
+/* Add this CSS to your existing stylesheet */
+
+/* Style the Poster Section */
+#poster-section {
+  background-color: #f5f5f5;
+  padding: 40px;
+  text-align: center;
+}
+
+#poster-section h1 {
+  color: #333;
+}
+
+.poster-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.poster-info {
+  text-align: left;
+  max-width: 300px;
+}
+
+.poster-info h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.poster-info p {
+  color: #666;
+}
+
+.poster-container img, .video-container video {
+  max-width: 70%;
+  height: auto;
+  rotate: 270deg;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.video-container {
+  max-width: 400px;
+  margin: auto;
+}
+
+/* Style the Winners Section */
+.winners-container {
+  margin-top: 40px;
+}
+
+.winners-container h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.winner-image {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.winner-image img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
