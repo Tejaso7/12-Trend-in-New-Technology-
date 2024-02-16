@@ -7,11 +7,11 @@
 
 /* Global styles */
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif; /* Change default font family */
   line-height: 1.6;
+  color: #333; /* Default text color */
 }
 
- 
 /* Style the header */
 header {
   background-color: #5a25d5;
@@ -24,23 +24,23 @@ header h1 {
   font-weight: 700;
   text-align: center;
   margin-bottom: 20px;
+  color: #f5f5f5; /* Headline color */
 }
-
 
 footer {
-  background-color: #5a25d5; /* Background color */
-  color: #fff; /* Text color */
-  padding: 20px; /* Padding around content */
-  text-align: center; /* Center align text */
+  background-color: #5a25d5;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
-
+/* Navigation styling */
 nav ul {
   list-style: none;
   display: flex;
   margin: 10px;
   justify-content: center;
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  flex-wrap: wrap;
 }
 
 nav ul li {
@@ -55,8 +55,7 @@ nav ul li a {
   color: #fff;
   text-decoration-color: rgb(22, 212, 168);
   font-weight: 700;
-  /* font-size: auto; / Adjust font size for smaller screens */
-  padding: 10px 15px; /* Adjust padding for smaller screens */
+  padding: 10px 15px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
@@ -65,23 +64,26 @@ nav ul li a:hover {
   background-color: #555;
 }
 
-/* Style section images */
+/* Section styling */
 section {
-  background-color: #fff; /* Background color of the card */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
-  padding: 20px; /* Padding inside the card */
-  margin-bottom: 20px; /* Spacing between cards */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
-section h1{
-  font-size: 30px; /* Title font size */
-  font-weight: bold; /* Bold title */
-  margin-bottom: 10px; /* Spacing between title and content */
+section h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #5a25d5; /* Headline color */
 }
-section p{
-  font-size: 16px; /* Content font size */
-  line-height: 1.6; /* Line height for readability */
+
+section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666; /* Text color */
 }
 
 section img {
@@ -89,19 +91,24 @@ section img {
   height: auto;
   margin-bottom: 20px;
   margin: 20px;
-  border-radius: 8px;
+  border-radius: 12px; /* Increase border radius */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   width: 100%;
+  border: 2px solid #5a25d5; /* Border color */
+  transition: transform 0.3s ease-in-out; /* Add hover effect */
 }
 
+section img:hover {
+  transform: scale(1.1); /* Enlarge image on hover */
+}
+
+/* Button styling */
 .button {
   display: inline-block;
   background-color: #753df6;
   color: #ffffff;
-  /* font-size: auto; */
-  /* font-weight: bold; */
-  padding:20px 10px;
+  padding: 20px 10px;
   border: none;
   border-radius: 25px;
   cursor: pointer;
@@ -114,29 +121,27 @@ section img {
   background-color: #45c3ae;
 }
 
-
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
   nav ul li {
-      margin-right: 10px; /* Adjust margin for smaller screens */
+    margin-right: 10px;
   }
 
   nav ul li a {
-      font-size: 12px; /* Adjust font size for smaller screens */
-      padding: 8px 12px; /* Adjust padding for smaller screens */
+    font-size: 12px;
+    padding: 8px 12px;
   }
 }
 
-.viewer{
+/* Viewer styling */
+.viewer {
   width: 700px;
   height: 400px;
   padding: 10px;
   margin: auto;
+}
 
-}   
-/* Add this CSS to your existing stylesheet */
-
-/* Style the Poster Section */
+/* Poster section styling */
 #poster-section {
   background-color: #f5f5f5;
   padding: 40px;
@@ -145,6 +150,7 @@ section img {
 
 #poster-section h1 {
   color: #333;
+  font-family: 'Pacifico', cursive; /* Change font family */
 }
 
 .poster-container {
@@ -163,19 +169,27 @@ section img {
   color: #333;
   font-size: 24px;
   margin-bottom: 10px;
+  font-family: 'Lobster', cursive; /* Change font family */
 }
 
 .poster-info p {
   color: #666;
 }
 
-.poster-container img, .video-container video {
+.poster-container img,
+.video-container video {
   max-width: 70%;
   height: auto;
   rotate: 270deg;
-  border-radius: 8px;
+  border-radius: 12px; /* Increase border radius */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out; /* Add hover effect */
+}
+
+.poster-container img:hover,
+.video-container video:hover {
+  transform: scale(1.1); /* Enlarge image on hover */
 }
 
 .video-container {
@@ -183,7 +197,7 @@ section img {
   margin: auto;
 }
 
-/* Style the Winners Section */
+/* Winners section styling */
 .winners-container {
   margin-top: 40px;
 }
@@ -192,6 +206,7 @@ section img {
   color: #333;
   font-size: 24px;
   margin-bottom: 20px;
+  font-family: 'Playfair Display', serif; /* Change font family */
 }
 
 .winner-image {
@@ -204,4 +219,22 @@ section img {
   height: auto;
   border-radius: 25px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out; /* Add hover effect */
 }
+
+.winner-image img:hover {
+  transform: scale(1.1); /* Enlarge image on hover */
+}
+
+/* Add styles for the animated GIF */
+.animated-gif {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px; /* Add border radius if needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow if needed */
+}
+
+ 
+ 
